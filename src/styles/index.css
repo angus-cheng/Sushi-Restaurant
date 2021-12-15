@@ -1,0 +1,31 @@
+html {
+    background-color: #2b4353;
+    color: #b6e1e0;
+    min-width: 100%;
+}
+
+body {
+    min-width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+#content {
+    overflow: auto;
+}
+
+#home {
+    background: url(../assets/sushiBackground.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+
+[data-tab-content] {
+    display: block;
+}
+
+li:hover {
+    color: #e8630a;
+}

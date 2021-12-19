@@ -1,0 +1,58 @@
+#home {
+    background: url(../assets/SushiDarkBackground.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 94vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hook-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+p {
+    color: #f2f2f2;
+}
+
+h2 {
+    color: #f2f2f2;
+    padding: 50px;
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+}
+
+.container-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.information {
+    color: #e8630a;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-gap: 5px;
+    padding: 50px;
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+    display: grid;
+    align-items: center;
+    max-width: 300px;
+}
+
+#btn-order {
+    color: #f2f2f2;
+    background-color: #e8630a;
+    padding: 10px 20px 10px 20px;
+    border-radius: 30px;
+    border-style: none;
+    margin: 30px 0px 0px 0px;
+    font-size: 18px;
+}

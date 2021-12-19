@@ -1,7 +1,8 @@
 html {
-    background-color: #2b4353;
-    color: #b6e1e0;
+    background-color: #b6e1e0;
+    color: #2b4353;
     min-width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
@@ -14,18 +15,44 @@ body {
     overflow: auto;
 }
 
-#home {
-    background: url(../assets/sushiBackground.webp);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
-}
-
-
 [data-tab-content] {
     display: block;
 }
 
 li:hover {
     color: #e8630a;
+}
+
+header {
+    background-color: black;
+    color: #f2f2f2;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#title-container {
+    display: flex;
+    flex-grow: 3;
+    margin: 20px;
+    color: #e8630a;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+    gap: 50px;
+    flex-grow: 1;
+    list-style-type: none;
+}
+
+li:hover, h1:hover {
+    cursor: pointer;
 }

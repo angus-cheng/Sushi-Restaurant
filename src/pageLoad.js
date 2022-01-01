@@ -18,6 +18,8 @@ const pageLoad = () => {
     googleIcons.href = "https://fonts.googleapis.com/icon?family=Material+Icons";
     titleContainer.id = "title-container";
 
+    contentContainer.classList.remove("fade-in");
+
     title.textContent = "Sushi";
     home.textContent = "Home";
     menu.textContent = "Menu";
@@ -34,6 +36,7 @@ const pageLoad = () => {
     contentContainer.append(header);
     head.append(googleIcons);
 
+    contentContainer.classList.add("fade-in");
     homeLoad();
 }
 

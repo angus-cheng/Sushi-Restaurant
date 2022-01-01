@@ -1,5 +1,6 @@
 import "./styles/index.css";
 import "./styles/home.css";
+import "./styles/menu.css";
 import pageLoad from "./pageLoad.js"
 import homeLoad from "./pages/home.js";
 import menuLoad from "./pages/menu.js";
@@ -8,9 +9,14 @@ import contactLoad from "./pages/contact.js";
 pageLoad();
 
 const tabs = document.querySelectorAll("[data-tab-target]");
+const body = document.querySelector("body");
 
 tabs.forEach(tab => {
-    tab.addEventListener("click", () => {
+    tab.addEventListener("click", (e) => {
+        e.preventDefault; 
+        body.classList.remove("fade-in");
+        void body.offsetWidth;
+        body.classList.add("fade-in");
         switch(tab.dataset.tabTarget) {
             case "home":
                 clearPage();

@@ -2,7 +2,7 @@
     background: url(../assets/SushiDarkBackground.jpg);
     background-repeat: no-repeat;
     background-position: top;
-    height: 94vh;
+    height: 90vh;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -22,7 +22,7 @@ p {
 
 h2 {
     color: #f2f2f2;
-    padding: 50px;
+    padding: 5vh;
     background: rgba(0, 0, 0, 0.75);
     border-radius: 10px;
 }

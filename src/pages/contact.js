@@ -1,4 +1,5 @@
 const contactLoad = () => {
+    const content = document.querySelector("#content");
 
 };
 

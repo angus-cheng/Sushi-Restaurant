@@ -19,7 +19,7 @@ const homeLoad = () => {
     hookCenter.classList.add("hook-center");
     hookCenter.textContent = "Come on down for some delicious cuisine"
     orderButton.textContent = "Order Now";
-    locationText.textContent = "HERE";
+    locationText.textContent = "17 Oxford St, Bulimba\n Brisbane, 4171";
     information.classList.add("information");
     locationIcon.classList.add("material-icons");
     locationIcon.textContent = "place";

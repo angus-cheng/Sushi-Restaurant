@@ -1,0 +1,16 @@
+p {
+    color: #f2f2f2;
+}
+
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.info {
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+    padding: 5vh;
+}

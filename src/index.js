@@ -1,6 +1,7 @@
 import "./styles/index.css";
 import "./styles/home.css";
 import "./styles/menu.css";
+import "./styles/contact.css";
 import pageLoad from "./pageLoad.js"
 import homeLoad from "./pages/home.js";
 import menuLoad from "./pages/menu.js";

@@ -11,9 +11,10 @@ pageLoad();
 
 const tabs = document.querySelectorAll("[data-tab-target]");
 const body = document.querySelector("body");
+const title = document.querySelector("h1");
 
 tabs.forEach(tab => {
-    tab.addEventListener("click", (e) => {
+    tab.addEventListener("click", e => {
         e.preventDefault; 
         body.classList.remove("fade-in");
         void body.offsetWidth;
@@ -36,6 +37,15 @@ tabs.forEach(tab => {
                 break;
         }
     });
+});
+
+title.addEventListener("click", () => {
+    body.classList.remove("fade-in");
+    void body.offsetWidth;
+    body.classList.add("fade-in");
+    clearPage();
+    homeLoad();
+    tabs[0].classList.add("tab-highlight");
 });
 
 const clearPage = () => {

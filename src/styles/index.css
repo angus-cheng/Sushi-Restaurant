@@ -65,6 +65,11 @@ h1 {
     animation: fadeIn 2s;
 }
 
+.tab-highlight {
+    color: #e8630a;
+    text-decoration: underline;
+}
+
 @keyframes fadeIn {
     0% {
         opacity: 0;

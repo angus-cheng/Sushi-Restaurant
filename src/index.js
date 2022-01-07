@@ -22,14 +22,17 @@ tabs.forEach(tab => {
             case "home":
                 clearPage();
                 homeLoad();
+                tab.classList.add("tab-highlight");
                 break;
             case "menu":
                 clearPage();
                 menuLoad();
+                tab.classList.add("tab-highlight");
                 break;
             case "contact":
                 clearPage();
                 contactLoad();
+                tab.classList.add("tab-highlight");
                 break;
         }
     });
@@ -40,4 +43,7 @@ const clearPage = () => {
     if (main !== null) {
         main.remove();
     }
+    tabs.forEach(tab => {
+        tab.classList.remove("tab-highlight");
+    });
 }

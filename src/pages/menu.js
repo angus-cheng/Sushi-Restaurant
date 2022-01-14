@@ -21,23 +21,31 @@ const menuLoad = () => {
 
         const itemImg = document.createElement("img");
         const itemText = document.createElement("h3");
+        const itemOverlay = document.createElement("div");
 
-        itemContainer.append(itemImg, itemText);        
+        itemOverlay.classList.add("overlay");
+        const text = document.createElement("p");
+        text.classList.add("menu-item-text");
+        itemOverlay.append(text);
+
+        itemContainer.append(itemOverlay, itemImg, itemText);
         menuItemDivs.push(itemContainer);
         menuItemsContainer.append(itemContainer);
     });
 
-    menuItemDivs[0].firstChild.src = californiaRollImg;
+    menuItemDivs[0].firstChild.firstChild.textContent = "A makizushi sushi roll, rolled inside-out containing cucumber, imitation crab and avocado";
+    menuItemDivs[0].childNodes[1].src = californiaRollImg;
     menuItemDivs[0].lastChild.textContent = "California Roll";
-    menuItemDivs[1].firstChild.src = avocadoRollImg;
+    menuItemDivs[1].firstChild.firstChild.textContent = "A makizushi sushi roll, rolled inside-out containing cucumber, imitation crab and avocado";
+    menuItemDivs[1].childNodes[1].src = avocadoRollImg;
     menuItemDivs[1].lastChild.textContent = "Avocado Roll";
-    menuItemDivs[2].firstChild.src = tunaRollImg;
+    menuItemDivs[2].childNodes[1].src = tunaRollImg;
     menuItemDivs[2].lastChild.textContent = "Tuna Roll";
-    menuItemDivs[3].firstChild.src = crabRollImg;
+    menuItemDivs[3].childNodes[1].src = crabRollImg;
     menuItemDivs[3].lastChild.textContent = "Crab Roll";
-    menuItemDivs[4].firstChild.src = salmonRollImg;
+    menuItemDivs[4].childNodes[1].src = salmonRollImg;
     menuItemDivs[4].lastChild.textContent = "Salmon Roll";
-    menuItemDivs[5].firstChild.src = cucumberRollImg;
+    menuItemDivs[5].childNodes[1].src = cucumberRollImg;
     menuItemDivs[5].lastChild.textContent = "Cucumber Roll";
 
     menuItemsContainer.id = "menuItems";

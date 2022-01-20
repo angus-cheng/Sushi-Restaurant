@@ -5,7 +5,8 @@ h2, h3 {
 
 #menuItems {
     display: grid;
-    grid-template: auto / 1fr 1fr 1fr;
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    margin: 10px;
 }
 
 .item-container {
@@ -39,6 +40,7 @@ img {
 .menu-item-text {
     text-align: center;
     color: #f2f2f2;
+    width: 100%;
 }
 
 .item-container:hover .overlay {

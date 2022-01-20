@@ -2,16 +2,24 @@ html {
     background-color: #222831;
     color: #2b4353;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-body {
-    min-width: 100%;
-    margin: 0px;
-    padding: 0px;
+    height: 100vh;
 }
 
 #content {
     overflow: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    height: 100%;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
 }
 
 [data-tab-content] {
